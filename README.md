@@ -1,17 +1,19 @@
 <h1 align="center">Hi 👋, I'm Swan Htet Aung Phyo</h1>
-<h3 align="center">A passionate Computer Science from Myanmar who is currently studying in Poland</h3>
+<h3 align="center">A passionate Computer Science Student from Myanmar who is currently studying in Poland</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=swanhtetaungphyo&label=Profile%20views&color=0e75b6&style=flat" alt="swanhtetaungphyo" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=swanhtetaungphyo" alt="swanhtetaungphyo" /></a> </p>
 
-- 🔭 I’m currently working on **BurmaGuru**
+- This is my new github profile **https://github.com/SwanHtetMorgan/SwanHtetMorgan**
+- 🔭 I’m currently working on **BurmaGuru** 
 
 - 🌱 I’m currently learning **go Fiber and AWS**
 
 - 👯 I’m looking to collaborate on **cache system**
 
 - 📫 How to reach me **swanhtetaungp@gmail.com**
+  
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
