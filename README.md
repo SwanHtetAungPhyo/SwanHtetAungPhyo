@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=swanhtetaungphyo" alt="swanhtetaungphyo" /></a> </p>
 
-- This is my new github profile **https://github.com/SwanHtetMorgan/SwanHtetMorgan**
+- This is my new github profile and no longer use is **https://github.com/SwanHtetMorgan/SwanHtetMorgan**
 - 🔭 I’m currently working on **BurmaGuru** 
 
 - 🌱 I’m currently learning **go Fiber and AWS**
