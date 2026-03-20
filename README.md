@@ -126,9 +126,9 @@ Reusable Terraform module standardizing VPC deployments across 3+ projects. Mult
 ## Connect
 
 <div align="center">
-
+[![Portfolio](https://portfolio-swan-pi.vercel.app/)
 [![Email](https://img.shields.io/badge/swanhtetaungp@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swanhtetaungp@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/swan-htet-aung-phyo)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swan-htet-aung-phyo-317912273)
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@swanhtet102002)
 
 </div>
