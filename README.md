@@ -19,21 +19,35 @@ location:    Krakow, Poland
 focus:       Distributed systems · Cloud infrastructure · gRPC · IaC
 currently:   Go Backend / DevOps Engineer (Contractor) @ (P)You Ireland
 open_to:     Backend collaboration · open source · contract work
+timezone:    UTC+7
 ```
 
 <br/>
 
-## Experience highlights
+## 🚀 Impact & Metrics
 
-- Architected CI/CD pipelines on AWS with GitHub Actions — reduced manual deployment by **85%**, shipped from weekly to daily
-- Engineered gRPC microservices improving data transfer efficiency by **35%** and supporting **10,000+ daily interactions**
-- Built a custom IaC language (TBLang) with full compiler pipeline — lexer, AST, semantic validation, AWS provider plugin
-- Contributed to **Grafana Loki** — open source observability tooling
-- Mentored engineers on DevOps best practices, microservice architecture, and gRPC patterns
+| Metric | Impact |
+|--------|--------|
+| **CI/CD Automation** | 85% reduction in manual deployments (Weekly → Daily) |
+| **Microservices** | 35% improvement in data transfer efficiency |
+| **Scale** | Supporting 10,000+ daily interactions |
+| **IaC Language** | Full compiler pipeline with AWS provider plugin |
+| **Open Source** | Contributing to Grafana Loki observability platform |
 
 <br/>
 
-## Tech stack
+## 💼 Experience highlights
+
+- 🏗️ **Architected CI/CD pipelines** on AWS with GitHub Actions — reduced manual deployment by **85%**, shipped from weekly to daily
+- 🔌 **Engineered gRPC microservices** improving data transfer efficiency by **35%** and supporting **10,000+ daily interactions**
+- 🛠️ **Built TBLang** — a custom IaC language with full compiler pipeline (lexer, AST, semantic validation, AWS provider plugin)
+- 📊 **Contributed to Grafana Loki** — open source observability tooling with production-grade telemetry
+- 👥 **Mentored engineers** on DevOps best practices, microservice architecture, and gRPC patterns
+- 🔐 **Developed KYC verification system** integrating AWS Textract & Rekognition with 70% similarity threshold and 90%+ confidence detection
+
+<br/>
+
+## 🛠️ Tech stack
 
 <div align="center">
 
@@ -69,12 +83,14 @@ open_to:     Backend collaboration · open source · contract work
 
 <br/>
 
-## Featured projects
+## 📌 Featured projects
 
 ### TBLang — Infrastructure as Code Language
 > Go · gRPC · Lexer/Parser · AWS SDK · Protocol Buffers
 
 A modern IaC language with plugin-based architecture. Full compiler pipeline — lexical analysis, AST generation, semantic validation, code generation. AWS provider plugin supporting VPC, EC2, and RDS provisioning. `.tbstate` state management and VSCode syntax highlighting extension.
+
+**Key Features:** Custom syntax, semantic validation, multi-cloud support
 
 ---
 
@@ -83,12 +99,16 @@ A modern IaC language with plugin-based architecture. Full compiler pipeline —
 
 Production-grade multi-session backend automating browser-based task orchestration via Claude API. Async request handling, Server-Sent Events for real-time streaming, stateless tool-proxy architecture for true concurrent multi-user operation.
 
+**Key Features:** Real-time SSE streaming, concurrent multi-user support, Claude AI integration
+
 ---
 
 ### AWS KYC Verification API
 > Go · Fiber · AWS Textract · Rekognition · Docker
 
 Automated KYC verification API integrating AWS Textract for document validation and Rekognition for facial recognition. Face comparison at 70% similarity threshold with 90%+ confidence detection. Containerized for scalable deployment.
+
+**Key Features:** Document OCR, facial recognition, high-accuracy verification, containerized
 
 ---
 
@@ -97,16 +117,45 @@ Automated KYC verification API integrating AWS Textract for document validation 
 
 Reusable Terraform module standardizing VPC deployments across 3+ projects. Multi-AZ, public/private subnets, cost-effective NAT instances, IMDSv2 enforcement. Dynamic EC2 provisioning with per-instance security groups and encrypted EBS volumes by default.
 
+**Key Features:** Multi-AZ, cost-optimized, security-first, reusable infrastructure
+
+---
+
+### AWS Cloud Security Monitoring
+> Terraform · AWS · CloudTrail · Security Hub · IAM
+
+Enterprise-grade cloud security and compliance monitoring platform. Comprehensive Terraform/IaC implementation for AWS including IAM policies, CloudTrail logging, Security Hub integration, and automated compliance checks. Includes architecture diagrams and step-by-step setup instructions.
+
+**Key Features:** Security Hub integration, automated compliance, centralized logging, terraform modules
+
 <br/>
 
-## Certifications
+## 🏆 Open Source Contributions
 
-- **HashiCorp Terraform Associate (003)**
-- **Introduction to Linux**
+- **Grafana Loki** — Contributing to production-grade observability and log aggregation platform
+  - Focus: Distributed tracing, performance optimization
+  - Impact: Used by thousands of organizations for log management
 
 <br/>
 
-## GitHub analytics
+## 📚 Blog & Insights
+
+I regularly share technical deep-dives and best practices on:
+
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@swanhtet102002)
+
+Topics include: gRPC patterns, DevOps automation, infrastructure as code, microservice architecture, and cloud-native best practices.
+
+<br/>
+
+## 🎓 Certifications
+
+- **HashiCorp Terraform Associate (003)** — Infrastructure automation & cloud provisioning
+- **Introduction to Linux** — System administration fundamentals
+
+<br/>
+
+## 📊 GitHub analytics
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=swanhtetaungphyo&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
@@ -123,13 +172,14 @@ Reusable Terraform module standardizing VPC deployments across 3+ projects. Mult
 
 <br/>
 
-## Connect
+## 🤝 Let's Connect
 
 <div align="center">
-[![Portfolio](https://portfolio-swan-pi.vercel.app/)
-[![Email](https://img.shields.io/badge/swanhtetaungp@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swanhtetaungp@gmail.com)
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-00D4AA?style=for-the-badge&logo=globe&logoColor=white)](https://portfolio-swan-pi.vercel.app/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swanhtetaungp@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swan-htet-aung-phyo-317912273)
-[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@swanhtet102002)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@swanhtetaung102002)
 
 </div>
 
