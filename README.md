@@ -17,7 +17,7 @@ name:        Swan Htet Aung Phyo
 role:        Go Backend & DevOps Engineer
 location:    Krakow, Poland
 focus:       Distributed systems · Cloud infrastructure · gRPC · IaC
-currently:   Go Backend / DevOps Engineer (Contractor) @ (P)You Ireland
+currently:   Go Backend / DevOps Engineer (Contractor)
 open_to:     Backend collaboration · open source · contract work
 timezone:    UTC+7
 ```
@@ -28,10 +28,12 @@ timezone:    UTC+7
 
 | Metric | Impact |
 |--------|--------|
+| **AWS Certified** | Solutions Architect Associate + Terraform Associate |
 | **CI/CD Automation** | 85% reduction in manual deployments (Weekly → Daily) |
-| **Microservices** | 35% improvement in data transfer efficiency |
-| **Scale** | Supporting 10,000+ daily interactions |
-| **IaC Language** | Full compiler pipeline with AWS provider plugin |
+| **Multi-Region HA** | Route 53 failover, cross-region RDS, Auto Scaling across 2 regions |
+| **Microservices** | 35% improvement in data transfer efficiency, 10,000+ daily interactions |
+| **Security** | CloudTrail + Security Hub monitoring with live attack simulations |
+| **IaC** | 8+ Terraform projects, custom IaC language (TBLang), reusable modules |
 | **Open Source** | Contributing to Grafana Loki observability platform |
 
 <br/>
@@ -44,6 +46,8 @@ timezone:    UTC+7
 - 📊 **Contributed to Grafana Loki** — open source observability tooling with production-grade telemetry
 - 👥 **Mentored engineers** on DevOps best practices, microservice architecture, and gRPC patterns
 - 🔐 **Developed KYC verification system** integrating AWS Textract & Rekognition with 70% similarity threshold and 90%+ confidence detection
+- 🎙️ **Built voice analysis service** — Deepgram STT, 8-goroutine analysis pipeline, AWS Bedrock AI summaries, Lambda + API Gateway deployment
+- 🌍 **Designed multi-region HA infrastructure** — Route 53 failover, cross-region RDS replication, Auto Scaling, CloudFront + WAF, all in Terraform
 
 <br/>
 
@@ -61,6 +65,7 @@ timezone:    UTC+7
 **Backend & protocols**
 
 ![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white)
+![Gin](https://img.shields.io/badge/Gin-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Fiber](https://img.shields.io/badge/Fiber-00ACD7?style=for-the-badge&logo=go&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Protocol Buffers](https://img.shields.io/badge/Protobuf-FF6D00?style=for-the-badge&logo=google&logoColor=white)
@@ -71,6 +76,7 @@ timezone:    UTC+7
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 **Data**
@@ -85,48 +91,62 @@ timezone:    UTC+7
 
 ## 📌 Featured projects
 
-### TBLang — Infrastructure as Code Language
-> Go · gRPC · Lexer/Parser · AWS SDK · Protocol Buffers
+### Voice Analysis Service
+> Go · AWS Lambda · API Gateway · Bedrock · S3 · RDS · Terraform
 
-A modern IaC language with plugin-based architecture. Full compiler pipeline — lexical analysis, AST generation, semantic validation, code generation. AWS provider plugin supporting VPC, EC2, and RDS provisioning. `.tbstate` state management and VSCode syntax highlighting extension.
+Audio-in, coaching-out. Accepts speech recordings, transcribes via Deepgram, runs 8 concurrent analysis checks (filler words, hesitation, pace, pauses, repetition, rambling, confidence, assertion-hedge switching), classifies the speaker, and generates a coaching summary through AWS Bedrock. Deployed as a Lambda container image behind API Gateway v2. Infrastructure managed with 8 modular Terraform configs (VPC, ECR, S3, RDS, IAM, Lambda, API GW, CloudWatch). CI/CD via GitHub Actions with Go + Docker + Terraform caching.
 
-**Key Features:** Custom syntax, semantic validation, multi-cloud support
+**AWS services used:** Lambda, API Gateway v2, S3, RDS PostgreSQL, Bedrock, ECR, CloudWatch, Secrets Manager, VPC with NAT
 
 ---
 
-### Cloud-Native Computer Use Agent
-> Python · FastAPI · Docker Compose · PostgreSQL · Anthropic Claude API
+### Multi-Region HA Infrastructure with Route 53 Failover
+> Terraform · AWS · CloudFront · WAF · Route 53 · Auto Scaling · RDS
 
-Production-grade multi-session backend automating browser-based task orchestration via Claude API. Async request handling, Server-Sent Events for real-time streaming, stateless tool-proxy architecture for true concurrent multi-user operation.
+Production-grade multi-region setup across eu-central-1 and eu-north-1. Route 53 health-checked DNS failover, Auto Scaling groups behind ALBs in both regions, cross-region RDS read replicas, CloudFront with WAF (rate limiting, common rule sets), and static site delivery from S3 via OAI. Everything in Terraform with KMS encryption on all storage.
 
-**Key Features:** Real-time SSE streaming, concurrent multi-user support, Claude AI integration
+**AWS services used:** Route 53, CloudFront, WAF, ALB, Auto Scaling, EC2, RDS (cross-region replica), S3, KMS, ACM
+
+---
+
+### AWS Cloud Security Monitoring
+> Terraform · AWS · CloudTrail · Security Hub · IAM · KMS
+
+Full security monitoring stack. IAM lockdown with enforced MFA, multi-region CloudTrail encrypted with KMS, CloudTrail Lake with 10 SQL-based threat hunting queries, Security Hub running CIS and FSBP benchmarks, CloudWatch-to-SNS alerting pipeline. Deployed on a real AWS account, ran attack simulations, and verified detections end to end.
+
+**AWS services used:** IAM, STS, CloudTrail, CloudTrail Lake, Security Hub, CloudWatch, SNS, KMS, S3
+
+---
+
+### TBLang — Infrastructure as Code Language
+> Go · gRPC · Lexer/Parser · AWS SDK · Protocol Buffers
+
+Custom IaC language with a full compiler pipeline (lexer, AST, semantic validation, code generation). AWS provider plugin handles VPC, EC2, and RDS provisioning. State management via `.tbstate` files. Published as a Homebrew tap with a VSCode syntax extension.
 
 ---
 
 ### AWS KYC Verification API
 > Go · Fiber · AWS Textract · Rekognition · Docker
 
-Automated KYC verification API integrating AWS Textract for document validation and Rekognition for facial recognition. Face comparison at 70% similarity threshold with 90%+ confidence detection. Containerized for scalable deployment.
+Takes an ID photo and a selfie, runs Textract for document validation, then Rekognition face comparison at a 70% similarity threshold. Returns pass/fail with confidence scores. Deployed as a Docker container.
 
-**Key Features:** Document OCR, facial recognition, high-accuracy verification, containerized
+**AWS services used:** Textract, Rekognition
 
 ---
 
-### Terraform AWS SWAN Compute Network Module
+### Terraform AWS Compute Network Module
 > Terraform · AWS
 
-Reusable Terraform module standardizing VPC deployments across 3+ projects. Multi-AZ, public/private subnets, cost-effective NAT instances, IMDSv2 enforcement. Dynamic EC2 provisioning with per-instance security groups and encrypted EBS volumes by default.
+Reusable module used across 3+ projects. VPC with multi-AZ public/private subnets, cost-effective NAT instances (not NAT Gateway), IMDSv2 enforcement, dynamic EC2 provisioning with per-instance security groups, encrypted EBS by default. Published to the Terraform registry.
 
-**Key Features:** Multi-AZ, cost-optimized, security-first, reusable infrastructure
+**AWS services used:** VPC, EC2, EBS, IAM
 
 ---
 
-### AWS Cloud Security Monitoring
-> Terraform · AWS · CloudTrail · Security Hub · IAM
+### Cloud-Native Computer Use Agent
+> Python · FastAPI · Docker Compose · PostgreSQL · Anthropic Claude API
 
-Enterprise-grade cloud security and compliance monitoring platform. Comprehensive Terraform/IaC implementation for AWS including IAM policies, CloudTrail logging, Security Hub integration, and automated compliance checks. Includes architecture diagrams and step-by-step setup instructions.
-
-**Key Features:** Security Hub integration, automated compliance, centralized logging, terraform modules
+Multi-session backend for browser-based task automation via Claude API. Async request handling, SSE streaming, stateless tool-proxy architecture for concurrent multi-user sessions.
 
 <br/>
 
@@ -150,6 +170,7 @@ Topics include: gRPC patterns, DevOps automation, infrastructure as code, micros
 
 ## 🎓 Certifications
 
+- **AWS Solutions Architect – Associate (SAA-C03)** — Cloud architecture, high availability, cost optimization, security
 - **HashiCorp Terraform Associate (003)** — Infrastructure automation & cloud provisioning
 - **Introduction to Linux** — System administration fundamentals
 
