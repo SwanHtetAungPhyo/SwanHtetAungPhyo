@@ -91,12 +91,6 @@ timezone:    UTC+7
 
 ## 📌 Featured projects
 
-### Voice Analysis Service
-> Go · AWS Lambda · API Gateway · Bedrock · S3 · RDS · Terraform
-
-Audio-in, coaching-out. Accepts speech recordings, transcribes via Deepgram, runs 8 concurrent analysis checks (filler words, hesitation, pace, pauses, repetition, rambling, confidence, assertion-hedge switching), classifies the speaker, and generates a coaching summary through AWS Bedrock. Deployed as a Lambda container image behind API Gateway v2. Infrastructure managed with 8 modular Terraform configs (VPC, ECR, S3, RDS, IAM, Lambda, API GW, CloudWatch). CI/CD via GitHub Actions with Go + Docker + Terraform caching.
-
-**AWS services used:** Lambda, API Gateway v2, S3, RDS PostgreSQL, Bedrock, ECR, CloudWatch, Secrets Manager, VPC with NAT
 
 ---
 
