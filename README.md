@@ -6,9 +6,11 @@
   <img src="https://komarev.com/ghpvc/?username=swanhtetaungphyo&label=Profile+views&color=00D4AA&style=for-the-badge" />
   <img src="https://img.shields.io/github/followers/swanhtetaungphyo?label=Followers&style=for-the-badge&color=00D4AA" />
   <img src="https://img.shields.io/github/stars/swanhtetaungphyo?label=Stars&style=for-the-badge&color=00D4AA" />
+    <img src="https://wakatime.com/badge/github/SwanHtetAungPhyo/SwanHtetAungPhyo.svg" />
 </div>
 
 <br/>
+
 
 ## About
 
